@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# roman_validator() v1
+# by Frank Sosa
+
 def roman_validator(number_r):
   import re
   validator = False
