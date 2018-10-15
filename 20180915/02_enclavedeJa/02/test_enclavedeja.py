@@ -4,6 +4,10 @@
 import pytest
 from enclavedeja import get_price
 
+THRESHOLD = 0.00001
+
+def similar(a, b):
+    return abs(a - b) < THRESHOLD
 
 @pytest.mark.parametrize(
     'seasons, expected', [
@@ -13,7 +17,7 @@ from enclavedeja import get_price
     ]
 )
 def test_no_discount(seasons, expected):
-    assert expected == get_price(seasons)
+    assert similar(expected, get_price(seasons))
 
 
 @pytest.mark.skip()
@@ -25,7 +29,7 @@ def test_no_discount(seasons, expected):
     ]
 )
 def test_simple_discount(seasons, expected):
-    assert expected == get_price(seasons)
+    assert similar(expected, get_price(seasons))
 
 
 @pytest.mark.skip()
