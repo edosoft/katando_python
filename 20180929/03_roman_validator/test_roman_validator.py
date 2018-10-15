@@ -15,7 +15,10 @@ from roman_validator import roman_validator
         'XL',
         'XC',
         'CD',
-        'CM'
+        'CM',
+        'DCCC',
+        'MCDXLIV',
+        'MMMCMXCIX'
     ]
 )
 def test_valid_roman_numbers(roman_number):
@@ -27,12 +30,18 @@ def test_valid_roman_numbers(roman_number):
         'VL',
         'VD',
         'LD',
+        'XD',
         'IIII',
         'VIV',
+        'IXV',
         'XXXX',
         'LXL',
         'CCCC',
-        'DCD'
+        'DCD',
+        'CDC',
+        'XLX',
+        'XCX',
+        'DXCX'
     ]
 )
 def test_invalid_roman_numbers(roman_number):
