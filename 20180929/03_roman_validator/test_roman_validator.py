@@ -17,6 +17,7 @@ from roman_validator import roman_validator
         'CD',
         'CM',
         'DCCC',
+        'MCCC',
         'MCDXLIV',
         'MMMCMXCIX'
     ]
