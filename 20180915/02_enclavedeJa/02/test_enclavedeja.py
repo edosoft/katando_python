@@ -7,6 +7,16 @@ from enclavedeja import get_price
 THRESHOLD = 0.00001
 
 def similar(a, b):
+    """
+    Takes two numeric arguments and returns `True` if their difference is
+    smaller than certain threshold (making them effectively equal for our
+    purposes).
+
+    This is useful when dealing with floating point, because operating
+    with the numbers add up rounding errors, and comparing one such result
+    to a floating point constant (or a number derived using different
+    operations) may result in non-equal numbers.
+    """
     return abs(a - b) < THRESHOLD
 
 @pytest.mark.parametrize(
