@@ -17,6 +17,7 @@ from roman_validator import roman_validator
         'CD',
         'CM',
         'DCCC',
+        'MVIII',
         'MCDXLIV',
         'MMMCMXCIX'
     ]
@@ -41,6 +42,7 @@ def test_valid_roman_numbers(roman_number):
         'CDC',
         'XLX',
         'XCX',
+        'CDCD',
         'DXCX'
     ]
 )
