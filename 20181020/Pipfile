@@ -1,0 +1,4 @@
+[packages]
+pytest = "*"
+pytest-xdist = "*"
+pytest-pythonpath = "*"
