@@ -5,7 +5,7 @@ import pytest
 import json
 
 from poker.hand import Hand
-from poker.exceptions import DuplicateCardError
+from poker.exceptions import DuplicatedCardError
 
 
 def get_ranks(rank):
@@ -19,7 +19,7 @@ def get_ranks(rank):
     '2D 2S 4Q 6K 4Q',
     ])
 def test_invalid_hand(hand):
-    with pytest.raises(DuplicateCardError):
+    with pytest.raises(DuplicatedCardError):
         Hand(hand)
 
 
